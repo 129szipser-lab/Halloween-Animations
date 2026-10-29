@@ -116,5 +116,30 @@ body {
 }
 
 #shadow {
-    margin: -90px 
+    margin: -90px auto 0;
+    background: #252c49;
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    animation: zoomy 2s infinite;
+}
+
+@keyframes floaty {
+    0%, 100% {
+        transform: translativeY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomy {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
 }
